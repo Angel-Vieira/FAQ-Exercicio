@@ -80,24 +80,28 @@ body{
     margin-block: 15px;
 }
 
-.none{
-    display: none;  
-}
 
 .contend{
+    height: 0;
+    overflow: hidden;
     font-weight: 300;
     padding-top: 10px;
+    transition:  0.3s ease-in-out;
+    
 }
 
 .conteudo-mostrado{
-    transition: 2s ease-in-out;
-    animation: slide-back 0.8s;
+    height: 70px;
+ 
 }
+
+
+
+   
 .container .area-de-perguntas .texto-e-seta{
     background-image: url(../images/Design\ sem\ nome\ \(5\)\ 1.png) ;
     background-repeat: no-repeat;
     background-position: right 10px  ;
-  
 }
 
 
@@ -106,14 +110,6 @@ body{
 }
 
 
-@keyframes slide-back{
-    0% {
-        transform: translatey(-10px);
-    }
-    100% {
-        transform: translatey(0px);
-    }
-}
 
 
 @media(max-width: 870px){
